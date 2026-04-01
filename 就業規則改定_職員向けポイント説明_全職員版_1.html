@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>就業規則等 改定のポイント｜社会福祉法人さかき会</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Serif+JP:wght@400;700&display=swap');
+
+:root {
+  --ink: #1c1c2e;
+  --ink-mid: #3d3d5c;
+  --ink-light: #7a7a9a;
+  --paper: #f9f8f5;
+  --paper-warm: #f3f0e8;
+  --green: #2a6049;
+  --green-mid: #3d8b68;
+  --green-light: #54b488;
+  --green-pale: #d6f0e4;
+  --navy: #1c3557;
+  --navy-pale: #e4edf7;
+  --amber: #9a6800;
+  --amber-pale: #fef5d8;
+  --red: #b51a2a;
+  --red-pale: #fde8ea;
+  --border: #ddd8cc;
+  --white: #fff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Noto Sans JP', sans-serif; background: var(--paper); color: var(--ink); line-height: 1.85; font-size: 13.5px; }
+.page { max-width: 880px; margin: 0 auto; padding: 36px 32px 80px; }
+
+/* HEADER */
+.doc-header { padding: 32px 0 26px; border-top: 7px solid var(--green); margin-bottom: 6px; }
+.doc-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .18em; color: var(--green-mid); margin-bottom: 10px; }
+.doc-header h1 { font-family: 'Noto Serif JP', serif; font-size: 28px; font-weight: 700; line-height: 1.35; margin-bottom: 18px; }
+.pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill { display: inline-flex; align-items: center; font-size: 12px; font-weight: 600; padding: 5px 14px; border-radius: 20px; white-space: nowrap; }
+.pill-g { background: var(--green); color: #fff; }
+.pill-n { background: var(--paper-warm); border: 1px solid var(--border); color: var(--ink-mid); }
+
+/* 全体会議バナー */
+.meeting-banner { background: linear-gradient(135deg,#1c3557,#2a4f7a); color: #fff; border-radius: 10px; padding: 22px 28px; margin: 28px 0 36px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.meeting-icon { font-size: 40px; flex-shrink: 0; }
+.meeting-lbl { font-size: 10.5px; font-weight: 700; letter-spacing: .15em; opacity: .7; margin-bottom: 5px; }
+.meeting-title { font-family: 'Noto Serif JP', serif; font-size: 20px; font-weight: 700; margin-bottom: 5px; }
+.meeting-detail { font-size: 13px; opacity: .88; line-height: 1.65; }
+
+/* LEAD */
+.lead { background: var(--white); border-left: 4px solid var(--green-light); padding: 16px 22px; border-radius: 0 8px 8px 0; margin-bottom: 36px; color: var(--ink-mid); }
+
+/* 対象者バッジ */
+.audience { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 32px; }
+.aud { display: flex; align-items: center; gap: 7px; padding: 9px 18px; border-radius: 8px; font-size: 13px; font-weight: 700; }
+.aud-r { background: var(--green-pale); border: 2px solid var(--green-mid); color: var(--green); }
+.aud-c { background: var(--navy-pale); border: 2px solid #6a90b8; color: var(--navy); }
+.aud-a { background: var(--paper-warm); border: 2px solid var(--border); color: var(--ink-mid); }
+
+/* SECTION */
+.section { margin-bottom: 48px; }
+.sec-hd { display: flex; align-items: center; gap: 14px; padding-bottom: 12px; border-bottom: 2px solid var(--border); margin-bottom: 20px; }
+.sec-num { width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Noto Serif JP',serif; font-size: 18px; font-weight: 700; flex-shrink: 0; color: #fff; }
+.n-g { background: var(--green); }
+.n-n { background: var(--navy); }
+.n-a { background: var(--amber); }
+.sec-title { font-family: 'Noto Serif JP',serif; font-size: 18px; font-weight: 700; }
+.scope { font-size: 11.5px; font-weight: 600; padding: 2px 9px; border-radius: 12px; margin-left: 8px; vertical-align: middle; }
+.sc-r { background: var(--green-pale); color: var(--green); }
+.sc-c { background: var(--navy-pale); color: var(--navy); }
+.sc-a { background: var(--paper-warm); border: 1px solid var(--border); color: var(--ink-mid); }
+
+/* CARD */
+.card { background: var(--white); border: 1px solid var(--border); border-radius: 8px; padding: 20px 24px; margin-bottom: 14px; }
+.tag { display: inline-block; font-size: 10.5px; font-weight: 700; letter-spacing: .08em; padding: 2px 9px; border-radius: 3px; margin-bottom: 9px; }
+.t-new { background: var(--green-pale); color: var(--green); }
+.t-chg { background: var(--navy-pale); color: var(--navy); }
+.t-note { background: var(--amber-pale); color: var(--amber); }
+.t-imp { background: var(--red-pale); color: var(--red); }
+.card h3 { font-size: 15px; font-weight: 700; margin-bottom: 9px; line-height: 1.5; }
+.card p { font-size: 13.5px; color: var(--ink-mid); line-height: 1.85; }
+.hl { background: var(--paper-warm); border-radius: 6px; padding: 11px 15px; margin-top: 12px; font-size: 13px; color: var(--ink-mid); line-height: 1.8; }
+
+/* TABLE */
+.tbl { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 12px; }
+.tbl th { background: var(--ink); color: #fff; padding: 8px 14px; text-align: center; font-size: 12px; font-weight: 500; }
+.tbl td { padding: 9px 14px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.75; }
+.tbl tr:nth-child(even) td { background: var(--paper-warm); }
+.tbl .lb { font-weight: 600; color: var(--ink); }
+.tbl .old { color: var(--ink-light); text-decoration: line-through; font-size: 12.5px; }
+.tbl .nw { color: var(--green); font-weight: 700; }
+.tbl .ct { text-align: center; }
+
+/* 評価グリッド */
+.ev-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 12px; }
+.ev-card { border-radius: 8px; padding: 14px; text-align: center; }
+.ev-s { background: #fff8e1; border: 2px solid #f9a825; }
+.ev-a { background: var(--green-pale); border: 2px solid var(--green-light); }
+.ev-b { background: var(--navy-pale); border: 2px solid #90b8d8; }
+.ev-lbl { font-size: 24px; font-family: 'Noto Serif JP',serif; font-weight: 700; }
+.ev-s .ev-lbl { color: #c47d00; }
+.ev-a .ev-lbl { color: var(--green); }
+.ev-b .ev-lbl { color: var(--navy); }
+.ev-name { font-size: 11px; color: var(--ink-mid); margin: 3px 0 5px; }
+.ev-num  { font-size: 16px; font-weight: 700; }
+.ev-sub  { font-size: 11px; color: var(--ink-light); margin-top: 3px; }
+
+/* 計算式ブロック */
+.formula { background: var(--ink); color: #fff; border-radius: 8px; padding: 18px 22px; margin-top: 12px; font-size: 13px; }
+.formula-ttl { font-size: 10.5px; font-weight: 700; letter-spacing: .15em; opacity: .65; margin-bottom: 8px; }
+.f-row { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; margin-bottom: 4px; }
+.f-item { background: rgba(255,255,255,.13); border-radius: 4px; padding: 3px 10px; font-weight: 600; white-space: nowrap; }
+.f-op { opacity: .6; font-size: 16px; padding: 0 2px; }
+.f-note { font-size: 11.5px; opacity: .7; margin-top: 8px; line-height: 1.75; }
+
+/* 係数カード */
+.coef-row { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.coef { flex: 1; min-width: 90px; border-radius: 6px; padding: 12px 10px; text-align: center; }
+.co-s { background: #fff8e1; border: 1.5px solid #f9a825; }
+.co-a { background: var(--green-pale); border: 1.5px solid var(--green-light); }
+.co-b { background: var(--navy-pale); border: 1.5px solid #90b8d8; }
+.co-lbl { font-size: 18px; font-family: 'Noto Serif JP',serif; font-weight: 700; }
+.co-s .co-lbl { color: #c47d00; }
+.co-a .co-lbl { color: var(--green); }
+.co-b .co-lbl { color: var(--navy); }
+.co-val { font-size: 20px; font-weight: 900; margin: 4px 0 2px; }
+.co-desc { font-size: 10.5px; color: var(--ink-light); line-height: 1.5; }
+
+/* 欠勤テーブル */
+.abs-tbl { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 12px; }
+.abs-tbl th { background: var(--ink-mid); color: #fff; padding: 8px 12px; text-align: center; font-size: 12px; }
+.abs-tbl td { padding: 9px 12px; border: 1px solid var(--border); text-align: center; line-height: 1.6; }
+.abs-tbl tr:nth-child(even) td { background: var(--paper-warm); }
+.abs-tbl .day { font-weight: 700; }
+.ok   { color: var(--ink-light); font-size: 12px; }
+.warn { color: var(--amber); font-weight: 600; }
+.ng   { color: var(--red); font-weight: 700; }
+
+/* チェックリスト */
+.chk-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
+.chk-cat { background: var(--paper-warm); border: 1px solid var(--border); border-radius: 5px; padding: 10px 14px; }
+.chk-title { font-size: 11px; font-weight: 700; color: var(--ink-light); letter-spacing: .1em; margin-bottom: 4px; }
+.chk-items { font-size: 12.5px; color: var(--ink-mid); line-height: 1.7; }
+.chk-new { background: var(--green-pale); border-color: var(--green-light); }
+.chk-new .chk-title { color: var(--green); }
+
+/* フロー */
+.flow { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.f-step { background: var(--navy-pale); border: 1px solid #b0c8e0; color: var(--navy); font-size: 12.5px; font-weight: 600; padding: 6px 12px; border-radius: 4px; white-space: nowrap; }
+.f-arr { color: var(--ink-light); font-size: 18px; }
+
+/* 定年図 */
+.ret-flow { display: flex; align-items: stretch; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); margin-top: 14px; }
+.ret-blk { flex: 1; padding: 16px 14px; text-align: center; }
+.rb-g { background: var(--green-pale); }
+.rb-n { background: var(--navy-pale); }
+.rb-gr { background: var(--paper-warm); }
+.ret-arrow { display: flex; align-items: center; justify-content: center; padding: 0 6px; font-size: 22px; color: var(--ink-light); background: var(--white); }
+.ret-age { font-family: 'Noto Serif JP',serif; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+.rb-g .ret-age { color: var(--green); }
+.rb-n .ret-age { color: var(--navy); }
+.rb-gr .ret-age { color: var(--ink-light); }
+.ret-lbl { font-size: 11px; font-weight: 700; color: var(--ink-mid); margin-bottom: 4px; }
+.ret-desc { font-size: 11.5px; color: var(--ink-light); line-height: 1.6; }
+
+/* 区切り */
+.divider { border: none; border-top: 2px dashed var(--border); margin: 44px 0; }
+
+/* 注意 */
+.notice { background: var(--red-pale); border-left: 4px solid var(--red); border-radius: 0 6px 6px 0; padding: 14px 18px; margin-top: 20px; font-size: 13px; color: var(--ink-mid); }
+.notice strong { color: var(--red); }
+
+/* FOOTER */
+footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: flex-end; font-size: 12px; color: var(--ink-light); flex-wrap: wrap; gap: 12px; }
+.f-org { font-weight: 700; color: var(--ink-mid); font-size: 13px; margin-bottom: 3px; }
+
+@media print {
+  body { font-size: 12px; background: #fff; }
+  .page { padding: 16px 20px; max-width: 100%; }
+  .card, .section { break-inside: avoid; }
+  .meeting-banner { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+@media (max-width: 600px) {
+  .ev-grid, .chk-grid { grid-template-columns: 1fr; }
+  .ret-flow { flex-direction: column; }
+  .doc-header h1 { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- HEADER -->
+<header class="doc-header">
+  <div class="doc-eyebrow">職員の皆さまへ ／ 2026年３月</div>
+  <h1>就業規則・給与規程等<br>改定のポイント</h1>
+  <div class="pills">
+    <span class="pill pill-g">2026年４月１日 施行</span>
+    <span class="pill pill-n">社会福祉法人さかき会　運営本部</span>
+  </div>
+</header>
+
+<!-- 全体会議バナー -->
+<div class="meeting-banner">
+  <div class="meeting-icon">📋</div>
+  <div>
+    <div class="meeting-lbl">NOTICE ／ 重要なお知らせ</div>
+    <div class="meeting-title">４月29日（火）全体会議にて詳細説明を行います</div>
+    <div class="meeting-detail">
+      改定内容の詳細および評価・賞与制度の運用については、<strong>2026年４月29日（火）の全体会議</strong>にて運営本部より説明いたします。疑問・不明点はその場でご質問ください。それまでの間は所属長へご相談ください。
+    </div>
+  </div>
+</div>
+
+<!-- 対象区分 -->
+<div class="audience">
+  <div class="aud aud-r">🟢 正規職員向け</div>
+  <div class="aud aud-c">🔵 契約職員向け</div>
+  <div class="aud aud-a">⚪ 全職員共通</div>
+</div>
+
+<!-- LEAD -->
+<div class="lead">
+  就業規則・給与規程等を全面的に見直し、2026年４月１日より施行します。「評価と処遇の連動を明確にする」「法令遵守を強化する」の２本柱で改定しました。正規職員・契約職員それぞれの主な変更点をまとめましたのでご確認ください。
+</div>
+
+
+<!-- ══ 正規職員①　職位体系 ══ -->
+<section class="section">
+  <div class="sec-hd">
+    <div class="sec-num n-g">1</div>
+    <div><span class="sec-title">職位体系が５段階になります</span><span class="scope sc-r">正規職員</span></div>
+  </div>
+  <div class="card">
+    <div class="tag t-new">新設・改称</div>
+    <h3>「主任（２級）」が新設され、全職位名が変わります</h3>
+    <table class="tbl">
+      <thead><tr><th>級</th><th>旧・職位名</th><th>新・職位名</th></tr></thead>
+      <tbody>
+        <tr><td class="lb ct">５級</td><td class="old ct">所長</td><td class="nw ct">運営本部長</td></tr>
+        <tr><td class="lb ct">４級</td><td class="old ct">副所長</td><td class="nw ct">施設長</td></tr>
+        <tr><td class="lb ct">３級</td><td class="old ct">主任</td><td class="nw ct">事業所長</td></tr>
+        <tr><td class="lb ct">２級</td><td class="old ct">—（なし）</td><td class="nw ct">主任【新設】</td></tr>
+        <tr><td class="lb ct">１級</td><td class="old ct">一般職</td><td class="nw ct">担当職</td></tr>
+      </tbody>
+    </table>
+    <div class="hl">📌 <strong>主任（２級）</strong>は担当職として３年以上の経験を積み、理事長が認めた者が対象。後輩指導・カンファレンス進行・シフト調整補助を担いますが、事業所全体の管理責任は負いません。</div>
+  </div>
+</section>
+
+
+<!-- ══ 正規職員②　定期昇給 ══ -->
+<section class="section">
+  <div class="sec-hd">
+    <div class="sec-num n-g">2</div>
+    <div><span class="sec-title">定期昇給が評価区分と連動します</span><span class="scope sc-r">正規職員</span></div>
+  </div>
+  <div class="card">
+    <div class="tag t-chg">変更</div>
+    <h3>毎年４月の昇給号給数が人事評価（Ｓ・Ａ・Ｂ）で決まります</h3>
+    <div class="ev-grid">
+      <div class="ev-card ev-s"><div class="ev-lbl">S</div><div class="ev-name">特別昇給</div><div class="ev-num">＋ 6号給</div><div class="ev-sub">著しい功績・貢献</div></div>
+      <div class="ev-card ev-a"><div class="ev-lbl">A</div><div class="ev-name">標準昇給</div><div class="ev-num">＋ 4号給</div><div class="ev-sub">標準的な職務遂行</div></div>
+      <div class="ev-card ev-b"><div class="ev-lbl">B</div><div class="ev-name">抑制昇給</div><div class="ev-num">0〜2号給</div><div class="ev-sub">指導改善を要する者</div></div>
+    </div>
+    <div class="hl">
+      📌 B評価の号給数は第１部チェックシート（上司評価）で決まります。<br>
+      　× が１つ以上 or △ が３つ以上 → <strong>０号給</strong>　／　△ が１〜２つ → <strong>１号給</strong>　／　全て○だが業績でB → <strong>２号給</strong><br>
+      　なお私事欠勤が多い場合はさらに減算されます（後述）。
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 正規職員③　賞与 ══ -->
+<section class="section">
+  <div class="sec-hd">
+    <div class="sec-num n-g">3</div>
+    <div><span class="sec-title">年度末賞与（３月）の算定方法</span><span class="scope sc-r">正規職員</span></div>
+  </div>
+  <div class="card">
+    <div class="tag t-chg">変更</div>
+    <h3>「事業所業績係数」×「個人評価係数」の二軸で算定します</h3>
+
+    <div class="formula">
+      <div class="formula-ttl">【年度末賞与（評価分）計算式】</div>
+      <div class="f-row">
+        <span class="f-item">基礎額</span><span class="f-op">×</span>
+        <span class="f-item">評価分基準月数（1.00か月）</span><span class="f-op">×</span>
+        <span class="f-item">事業所業績係数</span><span class="f-op">×</span>
+        <span class="f-item">個人評価係数</span>
+      </div>
+      <div class="f-note">
+        ※ 基礎額 ＝ 給料月額 ＋ 扶養手当 ＋ 管理職手当 ＋ 資格手当<br>
+        ※ 夏季・冬季（基礎分）は 基礎額 × 1.50か月（評価連動なし、生活保障的な賞与）
+      </div>
+    </div>
+
+    <p style="margin-top:18px; font-weight:700; font-size:13.5px;">● 事業所業績係数　— 所属事業所の行政期評価・目標達成状況で決まります</p>
+    <p style="font-size:12.5px; color:var(--ink-mid); margin:6px 0 8px;">事業所長・施設長が個人業務評価表（第２部）で業績目標の達成状況を申告し、理事長・運営本部長が事業所ごとに評価区分（Ｓ・Ａ・Ｂ）を決定します。稼働率・工賃・サービス質など行政への実績報告にも用いる指標が基準となります。</p>
+    <div class="coef-row">
+      <div class="coef co-s"><div class="co-lbl">S</div><div class="co-val">× 1.2</div><div class="co-desc">指標①②ともに<br>目標を大きく上回った</div></div>
+      <div class="coef co-a"><div class="co-lbl">A</div><div class="co-val">× 1.0</div><div class="co-desc">指標①②を概ね<br>達成・維持した（原則）</div></div>
+      <div class="coef co-b"><div class="co-lbl">B</div><div class="co-val">× 0.8</div><div class="co-desc">指標①②のいずれか<br>または双方が未達</div></div>
+    </div>
+
+    <p style="margin-top:18px; font-weight:700; font-size:13.5px;">● 個人評価係数　— 職位に応じた手順で評価区分を決定します</p>
+    <p style="font-size:12.5px; color:var(--ink-mid); margin:6px 0 10px;">個人業務評価表（第１部チェックシート ＋ 第２部または第３部）の結果をもとに、以下の手順で決定します。</p>
+    <table style="width:100%; border-collapse:collapse; font-size:12.5px; margin-bottom:12px;">
+      <thead>
+        <tr style="background:var(--ink-mid); color:#fff;">
+          <th style="padding:7px 12px; text-align:left; font-weight:500;">対象者</th>
+          <th style="padding:7px 12px; text-align:left; font-weight:500;">評価の流れ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid var(--border);">
+          <td style="padding:9px 12px; font-weight:600; color:var(--ink); white-space:nowrap;">担当職・主任（１〜２級）</td>
+          <td style="padding:9px 12px; color:var(--ink-mid);">
+            所属長（事業所長・施設長）が個人業務評価表（第３部）に基づき<strong>一次評価</strong>を行い、評価表を法人本部へ提出
+            →　理事長・運営本部長が内容を確認・<strong>承認</strong>し、<strong>最終評価区分を決定</strong>
+          </td>
+        </tr>
+        <tr style="background:var(--paper-warm); border-bottom:1px solid var(--border);">
+          <td style="padding:9px 12px; font-weight:600; color:var(--ink); white-space:nowrap;">事業所長・施設長（３〜４級）</td>
+          <td style="padding:9px 12px; color:var(--ink-mid);">理事長・運営本部長が個人業務評価表（第２部）に基づき評価・決定</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--border);">
+          <td style="padding:9px 12px; font-weight:600; color:var(--ink); white-space:nowrap;">運営本部長（５級）</td>
+          <td style="padding:9px 12px; color:var(--ink-mid);">運営本部長が自己評価を行い理事長へ提出　→　理事長が評価・決定し理事会に報告</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="coef-row">
+      <div class="coef co-s"><div class="co-lbl">S</div><div class="co-val">× 1.2</div><div class="co-desc">著しい功績・貢献<br>があった者</div></div>
+      <div class="coef co-a"><div class="co-lbl">A</div><div class="co-val">× 1.0</div><div class="co-desc">標準的な職務<br>遂行者（原則）</div></div>
+      <div class="coef co-b"><div class="co-lbl">B</div><div class="co-val">× 0.8</div><div class="co-desc">指導改善を要する者<br>または減額事由該当者</div></div>
+    </div>
+    <div class="hl" style="margin-top:14px;">📌 <strong>賞与の幅：最大1.44倍（S×S）〜 最小0.64倍（B×B）</strong><br>　事業所全体の成果と個人の頑張りが年度末賞与に直接反映されます。</div>
+  </div>
+</section>
+
+
+<!-- ══ 区切り ══ -->
+<hr class="divider">
+<div style="text-align:center; margin:-30px 0 30px; font-size:13px; font-weight:700; color:var(--navy);">以下は 🔵 契約職員向けの内容です</div>
+
+
+<!-- ══ 契約職員①　賞与 ══ -->
+<section class="section">
+  <div class="sec-hd">
+    <div class="sec-num n-n">4</div>
+    <div><span class="sec-title">契約職員の賞与算定方法</span><span class="scope sc-c">契約職員</span></div>
+  </div>
+  <div class="card">
+    <div class="tag t-chg">変更・明確化</div>
+    <h3>賞与は「事業所業績係数」×「役割係数」×「時間按分係数」で算定します</h3>
+    <p style="margin-bottom:12px; color:var(--ink-mid);">法人の業績が良好な場合に限り、原則として６月・12月・３月に支給されます。</p>
+
+    <div class="formula">
+      <div class="formula-ttl">【基礎分（６月・12月）計算式】</div>
+      <div class="f-row">
+        <span class="f-item">基準額</span><span class="f-op">×</span>
+        <span class="f-item">支給月数（1.50か月）</span><span class="f-op">×</span>
+        <span class="f-item">役割係数</span><span class="f-op">×</span>
+        <span class="f-item">時間按分係数</span>
+      </div>
+      <div class="formula-ttl" style="margin-top:14px;">【評価分（３月）計算式】</div>
+      <div class="f-row">
+        <span class="f-item">基準額</span><span class="f-op">×</span>
+        <span class="f-item">評価分基準月数（1.00か月）</span><span class="f-op">×</span>
+        <span class="f-item">事業所業績係数</span><span class="f-op">×</span>
+        <span class="f-item">役割係数</span><span class="f-op">×</span>
+        <span class="f-item">時間按分係数</span>
+      </div>
+      <div class="f-note">
+        ※ 基準額 ＝ 基本時給 × 172時間<br>
+        ※ 時間按分係数 ＝ 個人の月平均所定労働時間 ÷ 172時間<br>
+        ※ 役割係数：原則0.4（業務内容・責任の程度に応じ0.2〜1.0の範囲で個別設定）
+      </div>
+    </div>
+
+    <p style="margin-top:18px; font-weight:700; font-size:13.5px;">● 事業所業績係数（３月賞与のみ適用）— 行政期評価・目標達成状況で決まります</p>
+    <p style="font-size:12.5px; color:var(--ink-mid); margin:6px 0 8px;">所属事業所の管理者（事業所長・施設長）が受けた業績評価区分がそのまま適用されます。稼働率・工賃等の行政への実績指標をもとに決定されます。</p>
+    <div class="coef-row">
+      <div class="coef co-s"><div class="co-lbl">S</div><div class="co-val">× 1.2</div><div class="co-desc">事業所が目標を<br>大きく上回った</div></div>
+      <div class="coef co-a"><div class="co-lbl">A</div><div class="co-val">× 1.0</div><div class="co-desc">事業所が目標を<br>概ね達成（原則）</div></div>
+      <div class="coef co-b"><div class="co-lbl">B</div><div class="co-val">× 0.8</div><div class="co-desc">事業所が目標<br>未達・低下</div></div>
+    </div>
+    <div class="hl" style="margin-top:14px;">
+      📌 契約職員には個人業務評価は実施しないため、<strong>個人評価係数は1.0固定</strong>です。<br>
+      　ただし、勤務状況が著しく優秀と理事長が認めた場合は、３月賞与に<strong>特別加算</strong>が行われることがあります。<br>
+      　算定基礎期間中に私事欠勤や問題行動があった場合は、その程度に応じて賞与額が減額されることがあります。
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 区切り ══ -->
+<hr class="divider">
+<div style="text-align:center; margin:-30px 0 30px; font-size:13px; font-weight:700; color:var(--amber);">以下は ⚪ 正規職員・契約職員 共通の内容です</div>
+
+
+<!-- ══ 共通①　個人業務評価表 ══ -->
+<section class="section">
+  <div class="sec-hd">
+    <div class="sec-num n-a">5</div>
+    <div><span class="sec-title">個人業務評価表が新しくなります</span><span class="scope sc-r">正規職員</span></div>
+  </div>
+  <div class="card">
+    <div class="tag t-new">新設</div>
+    <h3>第１部：社会人基礎力チェックシート（全14項目）</h3>
+    <div class="chk-grid">
+      <div class="chk-cat"><div class="chk-title">① 規律・責任感</div><div class="chk-items">時間厳守 ／ ルール遵守 ／ 体調管理</div></div>
+      <div class="chk-cat"><div class="chk-title">② 報連相・コミュニケーション</div><div class="chk-items">挨拶と返事 ／ 報・連・相 ／ ミスの報告 ／ 傾聴と受容</div></div>
+      <div class="chk-cat"><div class="chk-title">③ 身だしなみ・衛生管理</div><div class="chk-items">服装・清潔感 ／ 整理整頓</div></div>
+      <div class="chk-cat"><div class="chk-title">④ 倫理・コンプライアンス</div><div class="chk-items">言葉遣い ／ 守秘義務 ／ 尊厳の保持</div></div>
+      <div class="chk-cat chk-new"><div class="chk-title">⑤ 主体性・業務改善【新設・参考評価】</div><div class="chk-items">自発的な情報収集と実践<br>業務改善への取り組み</div></div>
+      <div class="chk-cat" style="background:#f8f8f8;"><div class="chk-title">評価記号の意味</div><div class="chk-items">○ できている（標準）<br>△ 時々できていない<br>× できていない（要即改善）</div></div>
+    </div>
+    <div class="hl">⚠️ 上司評価で「×」が１つでも → <strong>B評価に降格</strong>。１〜12項目中「△」が３つ以上でも → <strong>B評価</strong>。<br>⑤（13・14項目）は参考評価のため、降格の対象外です。</div>
+  </div>
+  <div class="card">
+    <div class="tag t-note">スケジュール</div>
+    <h3>評価・賞与のスケジュール（毎年度）</h3>
+    <div class="flow">
+      <div class="f-step">２月中旬　自己記入・提出</div><div class="f-arr">→</div>
+      <div class="f-step">２〜３月　管理者が評価確定・提出</div><div class="f-arr">→</div>
+      <div class="f-step">３月中旬　賞与計算・支給決定</div><div class="f-arr">→</div>
+      <div class="f-step">３月末　評価分賞与支給</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ 共通②　欠勤と昇給・賞与 ══ -->
+<section class="section">
+  <div class="sec-hd">
+    <div class="sec-num n-a">6</div>
+    <div><span class="sec-title">私事欠勤が昇給・賞与に影響します</span><span class="scope sc-r">正規職員</span></div>
+  </div>
+  <div class="card">
+    <div class="tag t-imp">注意</div>
+    <h3>評価期間中（前年４月〜当年３月）の私事欠勤日数による影響</h3>
+    <table class="abs-tbl">
+      <thead>
+        <tr><th>私事欠勤日数</th><th>定期昇給への影響</th><th>賞与（個人評価係数）への影響</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="day">１〜２日</td><td class="ok">影響なし</td><td class="warn">10%減額</td></tr>
+        <tr><td class="day">３〜４日</td><td class="warn">号給数から２号給減算</td><td class="warn">20〜40%減額</td></tr>
+        <tr><td class="day">５〜７日</td><td class="ng">号給数から３号給減算</td><td class="ng">60〜80%減額</td></tr>
+        <tr><td class="day">８日以上</td><td class="ng">昇給停止（０号給）</td><td class="ng">100%（支給なし扱い）</td></tr>
+        <tr><td class="day">無断欠勤</td><td class="ng">昇給停止（日数問わず）</td><td class="ng">懲戒処分に準じて処理</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:12px; color:var(--ink-light); margin-top:8px;">※ 減算後の号給数が０を下回る場合は０号給とします。　※ 業務上の傷病・年次有給休暇・特別休暇は私事欠勤に含みません。</p>
+  </div>
+</section>
+
+
+<!-- ══ 共通③　定年・再雇用 ══ -->
+<section class="section">
+  <div class="sec-hd">
+    <div class="sec-num n-a">7</div>
+    <div><span class="sec-title">定年・再雇用の年齢が変わります</span><span class="scope sc-a">全職員</span></div>
+  </div>
+  <div class="card">
+    <div class="tag t-chg">変更</div>
+    <h3>正規職員は65歳定年、その後は契約職員として最大75歳まで就労できます</h3>
+    <div class="ret-flow">
+      <div class="ret-blk rb-g">
+        <div class="ret-lbl">正規職員として就労</div>
+        <div class="ret-age">〜65歳</div>
+        <div class="ret-desc">正規職員就業規則・<br>給与規程が適用</div>
+      </div>
+      <div class="ret-arrow">→</div>
+      <div class="ret-blk rb-n">
+        <div class="ret-lbl">定年退職後・契約職員として再雇用</div>
+        <div class="ret-age">65〜75歳</div>
+        <div class="ret-desc">契約職員就業規則・給与規程が適用<br>１年ごとの有期契約を更新<br>（第２定年まで）</div>
+      </div>
+      <div class="ret-arrow">→</div>
+      <div class="ret-blk rb-gr">
+        <div class="ret-lbl">第２定年</div>
+        <div class="ret-age">75歳</div>
+        <div class="ret-desc">年度末をもって退職<br>（健康状態・勤務成績・<br>法人の必要性を総合判断）</div>
+      </div>
+    </div>
+    <table class="tbl" style="margin-top:14px;">
+      <thead><tr><th>区分</th><th>旧</th><th>新</th></tr></thead>
+      <tbody>
+        <tr><td class="lb">正規職員　定年</td><td class="ct">65歳（変更なし）</td><td class="nw ct">65歳（変更なし）</td></tr>
+        <tr><td class="lb">定年後の再雇用上限（第２定年）</td><td class="old ct">満70歳の年度末まで</td><td class="nw ct">満75歳の年度末まで</td></tr>
+        <tr><td class="lb">契約職員　契約更新上限</td><td class="old ct">満70歳の年度末まで</td><td class="nw ct">満75歳の年度末まで</td></tr>
+        <tr><td class="lb">無期転換後の定年</td><td class="ct">満70歳（変更なし）</td><td class="ct">満70歳（変更なし）</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+<!-- ══ 共通④　その他 ══ -->
+<section class="section">
+  <div class="sec-hd">
+    <div class="sec-num n-a">8</div>
+    <div><span class="sec-title">その他の主な変更点</span><span class="scope sc-a">全職員</span></div>
+  </div>
+  <div class="card">
+    <div class="tag t-chg">変更</div>
+    <h3>年次有給休暇の付与が入社月に応じた比例付与に統一されます</h3>
+    <p>入社時から月割りで付与し、翌年度以降は毎年４月１日に一括付与します。10日以上付与された職員には年５日の時季指定取得が義務化されます（労基法第39条）。</p>
+  </div>
+  <div class="card">
+    <div class="tag t-chg">変更</div>
+    <h3>時間外手当の計算式が法定基準に完全対応します</h3>
+    <p>割増率が７区分に整理されます（通常時間外1.25倍・月60時間超1.50倍・深夜1.25倍・休日1.35倍ほか）。</p>
+  </div>
+  <div class="card">
+    <div class="tag t-new">整備</div>
+    <h3>ハラスメント防止・SNS利用ルールが規則に明文化されます</h3>
+    <p>各種ハラスメントの禁止、業務情報の私物端末への保存禁止、SNSへの不適切発信の禁止が正式に就業規則に規定されます。</p>
+  </div>
+  <div class="card">
+    <div class="tag t-new">整備</div>
+    <h3>処遇改善手当の支給額が職位ごとに明確化されます（正規職員）</h3>
+    <table class="tbl" style="margin-top:6px;">
+      <thead><tr><th>職位</th><th>月額支給額</th></tr></thead>
+      <tbody>
+        <tr><td class="lb">運営本部長（５級）</td><td class="nw ct">67,000円</td></tr>
+        <tr><td class="lb">施設長（４級）</td><td class="nw ct">52,000円</td></tr>
+        <tr><td class="lb">事業所長（３級）</td><td class="nw ct">42,000円</td></tr>
+        <tr><td class="lb">主任（２級）</td><td class="nw ct">37,000円</td></tr>
+        <tr><td class="lb">担当職（１級）</td><td class="nw ct">32,000円</td></tr>
+        <tr><td class="lb">職務限定職員（フルタイム換算）</td><td class="nw ct">27,000円</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:12px; color:var(--ink-light); margin-top:8px;">※ 短時間勤務の職員は所定労働時間に応じた按分額。　※ 契約職員は時給額に100円加算。</p>
+  </div>
+</section>
+
+
+<!-- 注意書き -->
+<div class="notice">
+  <strong>【ご確認ください】</strong><br>
+  本資料は改定のポイントを分かりやすく要約したものです。詳細・正確な内容は各規程の条文が優先されます。就業規則等の全文は各事業所に備え付けており、いつでも閲覧できます。<br>
+  <strong>詳細説明は 2026年４月29日（火）の全体会議 にて行います。</strong>不明点はそれまでの間、所属長または法人本部へご相談ください。
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="f-org">社会福祉法人さかき会</div>
+    <div>2026年（令和８年）３月　運営本部</div>
+  </div>
+  <div style="text-align:right;">
+    施行日：2026年４月１日<br>
+    就業規則等 改定のポイント（全職員版）
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
